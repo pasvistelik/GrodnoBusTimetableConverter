@@ -301,11 +301,11 @@ namespace GrodnoBusTimetableConverter
                                 t2.Add(tmpTableToDepo);
                             }
 
-                            Timetable tbl = new Timetable(TableType.table, t);
+                            Timetable tbl = new Timetable(null, null, TableType.table, t);
                             fullTable[part].Add(tbl);
                             
 
-                            Timetable tbl2 = new Timetable(TableType.table, t2);
+                            Timetable tbl2 = new Timetable(null, null, TableType.table, t2);
                             fullTable_depo[part].Add(tbl2);
 
                             Console.WriteLine("Bus № " + routeNum + ":  ["+routeCurrentStationName+ "]   on   [" + routeName + "]  converted.");
